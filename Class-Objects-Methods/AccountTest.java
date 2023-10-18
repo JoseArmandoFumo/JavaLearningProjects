@@ -25,7 +25,7 @@ public class AccountTest
 		account2.deposit(depositAmount);
 
 		System.out.printf ("%s The new balance is : $%.2f %n",account1.getName(), account1.getBalance());
-		System.out.printf("%s The new Balance is: $%.2f %n", account1.getName());
+		System.out.printf("%s The new Balance is: $%.2f %n", account2.getName(), account2.getBalance());
 	}
 }
 
