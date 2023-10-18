@@ -26,6 +26,20 @@ public class AccountTest
 
 		System.out.printf ("%s The new balance is : $%.2f %n",account1.getName(), account1.getBalance());
 		System.out.printf("%s The new Balance is: $%.2f %n", account2.getName(), account2.getBalance());
+	
+		System.out.print( "%s Enter deposit amount for account2: ");
+		depositAmount = input.nextDouble();
+		System.out.printf("%n Adding %.2f to account2 balance", depositAmount);
+		account2.deposit(depositAmount);
+
+		System.out.printf( "*********************************RESULT***************************************%n%n%n");
+		System.out.printf ("%s The new balance for account1 is: $%.2f",account1.getName(), account1.getBalance());
+		System.out.printf("%s The new Balance for account2 is: $%.2f", account2.getName(), account2.getBalance());
+
+
+
+
+
 	}
 }
 
