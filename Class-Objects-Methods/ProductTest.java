@@ -7,8 +7,9 @@ public class ProductTest
 	{
 		Product prod = new Product(1,1,1);
 
-	JOptionPane.showInputDialog ("Enter first number: ");
-	prop.getN1() = input.parseInt();
+		JOptionPane.showMessageDialog(null, prod.getN1());
+//	JOptionPane.showInputDialog ("Enter first number: ");
+//	prod.getN1() = JOptionPane.input.parseInt();
 
 	}
 
