@@ -23,7 +23,7 @@ public class Product
 		this.n1 = n1;
 	}
 
-	public int getn2()
+	public int getN2()
 	{
 		return n2; 
 	}
