@@ -18,7 +18,9 @@ public class ProductTest
 		int nm = Integer.parseInt (JOptionPane.showInputDialog("Enter  third number: "));
 		prod.setN3(nm);
 
-		JOptionPane.showMessageDialog(null, prod.getN1() + " * "+ prod.getN2() +" + "+ prod.getN3()+ " = ");
+		int product = prod.getN1()*prod.getN2()*prod.getN3();
+
+		JOptionPane.showMessageDialog(null, prod.getN1() + " * "+ prod.getN2() +" * "+ prod.getN3()+ " = " +product);
 
 	}
 
