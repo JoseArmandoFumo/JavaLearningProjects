@@ -18,7 +18,7 @@ public class Product
 	{
 		return n1;
 	}
-	public void setN1 (int n2)
+	public void setN1 (int n1)
 	{
 		this.n1 = n1;
 	}
