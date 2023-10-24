@@ -16,6 +16,14 @@ public class Account
 			balance += depositAmount;
 	}
 
+	public void withdraw (double amount)
+	{
+		if (amount > balance)
+			JOptionPane.show.messageDIalog( "Withdrawal amount exceded account balance!
+
+		balance -=amount;
+	}
+
 	public double getBalance()
 	{
 		return balance;
@@ -28,5 +36,6 @@ public class Account
 	public void setName(String name)
 	{
 		this.name = name;
+	
 	}
 }
