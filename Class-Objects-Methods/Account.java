@@ -21,7 +21,7 @@ public class Account
 	public void withdraw (double amount)
 	{
 		if (amount > balance)
-			JOptionPane.show.messageDIalog( "Withdrawal amount exceded account balance!");
+			JOptionPane.showMessageDialog( "Withdrawal amount exceded account balance!");
 
 		balance = balance - amount;
 	}
