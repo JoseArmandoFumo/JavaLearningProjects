@@ -1,3 +1,5 @@
+import javax.swing.JOptionPane;
+
 public class Account 
 {
 	private String name;
@@ -19,9 +21,9 @@ public class Account
 	public void withdraw (double amount)
 	{
 		if (amount > balance)
-			JOptionPane.show.messageDIalog( "Withdrawal amount exceded account balance!
+			JOptionPane.show.messageDIalog( "Withdrawal amount exceded account balance!");
 
-		balance -=amount;
+		balance = balance - amount;
 	}
 
 	public double getBalance()
