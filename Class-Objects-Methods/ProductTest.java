@@ -12,7 +12,7 @@ public class ProductTest
 		prod.setN1(number);
 		
 
-		number = Integer.parseInt (JOptionPane.showInputDialog("Enter sen=cond Number :"));
+		number = Integer.parseInt (JOptionPane.showInputDialog("Enter second Number :"));
 		prod.setN2(number);
 
 		number = Integer.parseInt (JOptionPane.showInputDialog("Enter  third number: "));
