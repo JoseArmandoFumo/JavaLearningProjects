@@ -6,21 +6,25 @@ public class AccountTest
 	public static void main (String [] args)
 	{
 		Account account1 = new Account("Benk: ", 50.0); 
-		//Account account2 = new Account ("Jose :",50.0);
+		Account account2 = new Account ("Jose :",50.0);
 
-
+			double amount = 0.0;
 		
-		Scanner input = new Scanner (System.in);
+		//Scanner input = new Scanner (System.in);
 
-		System.out.printf("%s Current balance account1: %.2f%n",account1.getName(), account1.getBalance());
+		JOptionPane.showMessageDialog(null, " Current Balance in account1: "+account1.getName()+account1.getBalance());
+		JOptionPane.showMessageDialog(null, "Current Balance in Account2: "+ account2.getName() + account2.getBalance());
+
+
+		//System.out.printf("%s Current balance account1: %.2f%n",account1.getName(), account1.getBalance());
 		//System.out.printf("%s Current balance account2: %.2f%n", account2.getName(), account2.getBalance());
 
 
-		double amount = Double.parseDouble(JOptionPane.showInputDialog( "Enter withdrawal amount for account1: "));
+		amount = Double.parseDouble(JOptionPane.showInputDialog( "Enter withdrawal amount for account1: "));
 		//double amount = input.nextDouble;
 		account1.withdraw(amount);
 		
-		//double depositAmount = input.nextDouble();
+		// amount = Double.ParseDouble ( JOptionPane.showInputDialog("Enter the Deposit amount: "));
 		//System.out.printf  ("%nadding %.2f to account1 balance%n", depositAmount);
 		//account1.deposit(depositAmount);
 
