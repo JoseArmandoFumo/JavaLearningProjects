@@ -30,15 +30,16 @@ public class AccountTest
 		account1.withdraw(amount);
 		amount = Double.parseDouble (JOptionPane.showInputDialog("Enter withdrawal amount for account2: "));
 		account2.withdraw(amount);
-
-	/*	else
+		}
+		else
 		   {
 			if(op == 2)
 			{
 				amount = Double.parseDouble(JOptionPane.showInputDialog("Enter the deposit amount: "));
 				account1.deposit(amount);
 				amount = Double.parseDouble (JOptionPane.showInputDialog("Enter the deposit amount: "));
-				account2.deposit(ammount);
+				account2.deposit(amount);
+			}
 			else
 			   {
 				if (op == 3)
@@ -47,9 +48,9 @@ public class AccountTest
 							+"Balance in account2: " + account2.getName()+ account2.getBalance() +"\n");
 				}
 			   }
-		        }
-		    }   */
-		}
+		        
+		    }   
+		
 		
 		// amount = Double.ParseDouble ( JOptionPane.showInputDialog("Enter the Deposit amount: "));
 		//System.out.printf  ("%nadding %.2f to account1 balance%n", depositAmount);
