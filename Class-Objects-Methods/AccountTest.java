@@ -9,13 +9,14 @@ public class AccountTest
 		Account account2 = new Account ("Jose :",70.0);
 
 			double amount = 0.0;
+			int i ;
 		
 		//Scanner input = new Scanner (System.in);
 
 		JOptionPane.showMessageDialog(null, " Current Balance in account1: "+account1.getName()+account1.getBalance()+ "\n"
 						+ "Current Balance in Account2: "+ account2.getName() + account2.getBalance());
 
-
+		//while
 		//System.out.printf("%s Current balance account1: %.2f%n",account1.getName(), account1.getBalance());
 		//System.out.printf("%s Current balance account2: %.2f%n", account2.getName(), account2.getBalance());
 
