@@ -19,7 +19,7 @@ public class InvoiceTest
 		pric = Double.parseDouble(JOptionPane.showInputDialog("Enter unit price: "));
 		inv.setPrice( pric);
 
-		totalPrice = inv.getQty() * inv.getPrice();
+		totalPrice = inv.getInvoiceAmount(quant,pric);
 
 		JOptionPane.showMessageDialog(null, "The Amount to be paid is: " + totalPrice);
 

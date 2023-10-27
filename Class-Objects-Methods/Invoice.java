@@ -51,19 +51,19 @@ public class Invoice
 	{
 		this.price = price;
 	}
-	public void getInvoiceAmount (int quant, double pric)
+	public double getInvoiceAmount (int quant, double pric)
 	{
-		double totalPrice;
+		double totalPrice = 0.0;
 		if (quant >0 && pric > 0.0)
 			totalPrice = quant * pric;
 		else
 		{
 			if(quant > 0 && pric <= 0.0)
 			
-				JOptionPane.showMessageDialog (null, "Price Invalid, Price must be higher than 0!");
+				JOptionPane.showMessageDialog (null, "Price Invalid, Price must be higher than "+ pric);
 			else 
-				JOptionPane.showMessageDialog (null, "Quantity Invalid, Quantity mus be Higher than 0!");
+				JOptionPane.showMessageDialog (null, "Quantity Invalid, Quantity must be Higher than "+ quant);
 		}
+		return totalPrice;
 	}
 }
-
