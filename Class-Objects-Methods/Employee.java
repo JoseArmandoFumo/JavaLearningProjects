@@ -48,7 +48,7 @@ public class Employee
 	{
 		sal *=12;
 		double salBonus = sal + sal * 0.1;
-		JOptionPane.showMessageDialog (null, "Anual Salary: " + sal + "\n" + "Anual Salary with Bonus: " + salBonus);
+		JOptionPane.showMessageDialog (null, name +" "+ surname + "\n Anual Salary: " + sal + "\n" + "Anual Salary with Bonus: " + salBonus);
 		
 		return salBonus;
 	}

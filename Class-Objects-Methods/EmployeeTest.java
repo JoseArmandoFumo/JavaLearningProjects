@@ -20,7 +20,7 @@ public class EmployeeTest
 		
 		double  totalSal = emp1.salaryCalculator(sal);
 
-		JOptionPane.showMessageDialog(null, "Name: " +emp1.getName() + "\n Surname: " + emp1.getSurname() + "\n" + totalSal);
+		JOptionPane.showMessageDialog(null, totalSal);
 
 	}
 }
