@@ -1,4 +1,4 @@
-import javax.swing.JOptionpane;
+import javax.swing.JOptionPane;
 
 public class Invoice
 {
@@ -15,4 +15,55 @@ public class Invoice
 		this.price = price;
 
 	}
-	public void 
+	public String getId ()
+	{
+		return id;
+	}
+
+	public void setId (String id)
+	{
+		this.id = id;
+	}
+
+	public String getDescription ()
+	{
+		return description;
+	}
+
+	public void setDescription (String description)
+	{
+		this.description = description; 
+	}
+	public int getQty()
+	{
+		return qty;
+	}
+	public void setQty (int qty)
+	{
+		this.qty = qty;
+	}
+
+	public double getPrice() 
+	{
+		return price;
+	}
+	public void setPrice (double price)
+	{
+		this.price = price;
+	}
+	public void getInvoiceAmount (int quant, double pric)
+	{
+		double totalPrice;
+		if (quant >0 && pric > 0.0)
+			totalPrice = quant * pric;
+		else
+		{
+			if(quant > 0 && pric <= 0.0)
+			
+				JOptionPane.showMessageDialog (null, "Price Invalid, Price must be higher than 0!");
+			else 
+				JOptionPane.showMessageDialog (null, "Quantity Invalid, Quantity mus be Higher than 0!");
+		}
+	}
+}
+
