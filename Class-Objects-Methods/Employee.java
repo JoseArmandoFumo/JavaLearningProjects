@@ -50,6 +50,6 @@ public class Employee
 		double salBonus = sal + sal * 0.1;
 		JOptionPane.showMessageDialog (null, name +" "+ surname + "\n Anual Salary: " + sal + "\n" + "Anual Salary with Bonus: " + salBonus);
 		
-		return salBonus;
+		return 0;
 	}
 }
