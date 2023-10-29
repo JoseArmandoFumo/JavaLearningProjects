@@ -6,17 +6,13 @@ public class Date
 	private int mes;
 	private int dia;
 
-	public Date (int ano, int mes, int dia) 
+	public Date (int dia, int mes, int ano) 
 	{
-		if (ano >=0)
-			this.ano = ano;
-		if (mes <=12 && mes >0)
-
-			this.mes = mes;
-		if (dia <=1 && dia >0)
-			this.dia = dia;
-
+		this.dia = dia;
+		this.mes = mes;
+		this.ano = ano;
 	}
+
 	public int getAno ()
 	{
 		return ano;
@@ -45,7 +41,7 @@ public class Date
 
 	public void displayDate (int dia , int mes , int ano)
 	{
-		JOptionPane.showMessageDialog (null, dia +"/" + mes +"/" +ano);
+		JOptionPane.showMessageDialog (null, dia +"/ " + mes +" / " +ano);
 	}
 }
 
