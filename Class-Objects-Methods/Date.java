@@ -17,28 +17,28 @@ public class Date
 			this.dia = dia;
 
 	}
-	public void getAno ()
+	public int getAno ()
 	{
 		return ano;
 	}
-	public int setAno (int ano)
+	public void setAno (int ano)
 	{
 		this.ano = ano;
 	}
 
-	public void getMes ()
+	public int getMes ()
 	{
 		return mes;
 	}
-	public int setMes (int mes)
+	public void setMes (int mes)
 	{
 		this.mes = mes;
 	}
-	public void getDia ()
+	public int getDia ()
 	{
 		return dia;
 	}
-	public int setDia (int dia)
+	public void setDia (int dia)
 	{
 		this.dia = dia;
 	}
