@@ -57,6 +57,17 @@ public class HeartRates
 	{
 
 	}
+
+	public void maxHeartRate ()
+	{
+
+
+	}
+
+	public void targetHeartRate ()
+	{
+
+	}
 }
 
 
