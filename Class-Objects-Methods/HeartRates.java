@@ -1,0 +1,55 @@
+import javax.swing.JOptionPane;
+
+public class HeartRates 
+{
+	private String name;
+	private String surname;
+	private int day;
+	private int month;
+	private int year;
+
+	public HeartRates (String name, String surname, int day, int month, int year)
+	{
+		this.name = name;
+		this.surname = surname;
+		this.day = day;
+		this.month =  month;
+		this.year = yearr;
+	}
+	
+	public String getName()
+	{
+		return name;
+	}
+	public void setName (String name)
+	{
+		this.name = name;
+	}
+
+	public String getSurname ()
+	{
+		return surname;
+	}
+	public void setSurname(String surname)
+	{
+		this.surname = surname;
+	}
+
+	public int getDay()
+	{
+		return day;
+	}
+	public int setDay (int day)
+	{
+		this.day = day;
+	}
+
+	public int getYear ()
+	{
+		return year;
+	}
+	public int setYear (int year)
+	{
+		this.year = year;
+	}
+}
