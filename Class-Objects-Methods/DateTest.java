@@ -25,6 +25,7 @@ public class DateTest
 		else
 			JOptionPane.showMessageDialog (null, "Invalid Year!");
 
+		//In 2.0 version, this bug nust be fixed : show the date even with invalid input
 		date.displayDate(day,month,year);
 	}
 }
