@@ -52,4 +52,33 @@ public class HeartRates
 	{
 		this.year = year;
 	}
+
+	public int getAge(int birthYear)
+	{
+
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
