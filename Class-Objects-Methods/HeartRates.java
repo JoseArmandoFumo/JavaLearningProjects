@@ -14,7 +14,7 @@ public class HeartRates
 		this.surname = surname;
 		this.day = day;
 		this.month =  month;
-		this.year = yearr;
+		this.year = year;
 	}
 	
 	public String getName()
@@ -39,7 +39,7 @@ public class HeartRates
 	{
 		return day;
 	}
-	public int setDay (int day)
+	public void setDay (int day)
 	{
 		this.day = day;
 	}
@@ -48,21 +48,23 @@ public class HeartRates
 	{
 		return year;
 	}
-	public int setYear (int year)
+	public void setYear (int year)
 	{
 		this.year = year;
 	}
 
-	public int getAge(int birthYear)
+	public void getAge(int birthYear)
 	{
 		if(birthYear >=0)
 		{
-			int age = 2023 - birthYear;
+		int age = 2023 - birthYear;
+		JOptionPane.showMessageDialog (null,"Age: " + age);
 		}
-		return age;
+		//return age;
 
 	}
-
+}
+/*
 	public void maxHeartRate ()
 	{
 
@@ -71,30 +73,5 @@ public class HeartRates
 
 	public void targetHeartRate ()
 	{
-
-	}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
+	} 
+	*/
