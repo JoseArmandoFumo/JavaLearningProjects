@@ -63,14 +63,15 @@ public class HeartRates
 		this.year = year;
 	}
 
-	public void getAge(int birthYear)
-	{
+	public int getAge(int birthYear)
+	{     
+		int age = 0;
 		if(birthYear >=0)
-		{
-		int age = 2023 - birthYear;
-		JOptionPane.showMessageDialog (null,"Age: " + age);
-		}
-		//return age;
+	
+		age = 2023 - birthYear;
+		//JOptionPane.showMessageDialog (null,"Age: " + age);
+		
+		return age;
 
 	}
 }
