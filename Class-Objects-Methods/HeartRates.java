@@ -43,6 +43,16 @@ public class HeartRates
 	{
 		this.day = day;
 	}
+	public int getMonth ()
+	{
+		return month;
+	}
+
+	public void SetNonth (int month)
+	{
+		this.month = month;
+	}
+
 
 	public int getYear ()
 	{
