@@ -55,6 +55,11 @@ public class HeartRates
 
 	public int getAge(int birthYear)
 	{
+		if(birthYear >=0)
+		{
+			int age = 2023 - birthYear;
+		}
+		return age;
 
 	}
 
