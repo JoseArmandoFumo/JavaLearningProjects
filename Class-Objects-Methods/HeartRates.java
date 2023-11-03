@@ -83,9 +83,13 @@ public class HeartRates
 		return mhf;
 
 	}
-}
-/*
-	public void targetHeartRate ()
+
+	public  double targetHeartRate (int mhf)
 	{
+		double thr = mhf * 0.50;
+
+		return thr;
+		
 	} 
-	*/
+	
+}
