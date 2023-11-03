@@ -19,11 +19,12 @@ public class HeartRatesTest
                 hr.setDay( day);
 		
 		int age = hr.getAge(year);
+		int maxFrequency = hr.maxHeartRate(age);																			
 
 	               JOptionPane.showMessageDialog(null, "\n"+ hr.getName() + " " + hr.getSurname()
                                         		+ "\n" + hr.getDay() + "/"+hr.getMonth() 
 							+"/" + hr.getYear() 
-							+ "\n \n \n Your Age is: " + age);
+							+ "\n \n \n Your Age is: " + age+ "\n Max Heart Rate: "+maxFrequency);
 
 					
 		}

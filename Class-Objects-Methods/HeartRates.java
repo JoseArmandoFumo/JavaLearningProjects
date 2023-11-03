@@ -74,14 +74,17 @@ public class HeartRates
 		return age;
 
 	}
-}
-/*
-	public void maxHeartRate ()
-	{
 
+
+	public int maxHeartRate (int age)
+	{
+		int mhf = 220 - age;
+
+		return mhf;
 
 	}
-
+}
+/*
 	public void targetHeartRate ()
 	{
 	} 
