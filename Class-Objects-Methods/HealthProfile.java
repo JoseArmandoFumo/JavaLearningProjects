@@ -70,5 +70,11 @@ public HealthProfile
 	{
 		this.year = year;
 	}
+	public int getAge (int birth)
+	{
+		int age = 2023 - birth;
+
+		return age;
+	}
 }
 
