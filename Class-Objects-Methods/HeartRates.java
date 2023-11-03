@@ -65,8 +65,8 @@ public class HeartRates
 
 	public int getAge(int birthYear)
 	{     
-		int age = 0;
-		if(birthYear >=0)
+		int age;
+		//if(birthYear >=0)
 	
 		age = 2023 - birthYear;
 		//JOptionPane.showMessageDialog (null,"Age: " + age);
