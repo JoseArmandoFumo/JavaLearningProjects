@@ -7,23 +7,25 @@ public class HeartRatesTest
 
 			HeartRates hr = new HeartRates ("Benk", "Fumo", 22,04,1992);
 			
-			
+		String name = JOptionPane.showInputDialog ("Enter your Name: ");
+		hr.setName(name);
+		String surname = JOptionPane.showInputDialog ("Enter your Surname: ");
+		hr.setSurname(surname);
+		int year = Integer.parseInt (JOptionPane.showInputDialog ("Enter your Birth Year: "));
+		hr.setYear(year);
+		int month = Integer.parseInt (JOptionPane.showInputDialog(" ENter your Birth Month: "));
+		hr.setMonth(month);
+		int day = Integer.parseInt (JOptionPane.showInputDialog("Enter Birth Day: "));
+                hr.setDay( day);
+		
+		int age = hr.getAge(year);
 
+	               JOptionPane.showMessageDialog(null, "\n"+ hr.getName() + " " + hr.getSurname()
+                                        		+ "\n" + hr.getDay() + "/"+hr.getMonth() 
+							+"/" + hr.getYear() 
+							+ "\n \n \n Your Age is: " + age);
 
-			JOptionPane.showMessageDialog(null, "*******Current Data ********* \n"+ hr.getName() + "\n" + hr.getSurname()
-					+ "\n" + hr.getYear() + "/ "+hr.getMonth() +" /" + hr.getDay() + "\n \n \n \n ");
-
-
-			 int birth = Integer.parseInt (JOptionPane.showInputDialog("Enter Birth Year: "));
-                        hr.getAge( birth);
-			int age = hr.getAge(birth);
-
-			JOptionPane.showMessageDialog (null, age);
-
-	/*               JOptionPane.showMessageDialog(null, "\n"+ hr.getName() + "\n" + hr.getSurname()
-                                        + "\n" + hr.getYear() + " \n "+hr.getMonth() +" \n" + hr.getDay() + "\n \n \n \n Your Age is: " + age);
-
-					*/
+					
 		}
 	}
 

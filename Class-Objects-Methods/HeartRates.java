@@ -48,7 +48,7 @@ public class HeartRates
 		return month;
 	}
 
-	public void SetNonth (int month)
+	public void setMonth (int month)
 	{
 		this.month = month;
 	}
@@ -66,10 +66,10 @@ public class HeartRates
 	public int getAge(int birthYear)
 	{     
 		int age;
-		//if(birthYear >=0)
-	
+		if(birthYear >=0)
 		age = 2023 - birthYear;
-		//JOptionPane.showMessageDialog (null,"Age: " + age);
+		else
+			age = -1;
 		
 		return age;
 
