@@ -1,15 +1,17 @@
 import javax.swing.JOptionPane;
 
-public HealthProfile
+public class HealthProfile
 {
 	private String name;
 	private String surname;
-	private char gender;
+	private String gender;
 	private int day;
 	private int month;
 	private int year;
+	private double weight;
+	private double height;
 
-	public class HealthProfile (String name, String surname, char gender, int day, int month, int year)
+	public HealthProfile (String name, String surname, String gender, int day, int month, int year, double weight, double height)
 	{
 		this.name = name;
 		this.surname = surname;
@@ -17,6 +19,8 @@ public HealthProfile
 		this.day = day;
 		this.month = month;
 		this.year = year;
+		this.weight = weight;
+		this.height = height;
 	}
 	public String getName( )
 	{
@@ -36,11 +40,11 @@ public HealthProfile
 		this.surname = surname;
 	}
 	
-	public char getGender()
+	public String getGender()
 	{
 		return gender;
 	}
-	public void setGender (char gender)
+	public void setGender (String gender)
 	{
 		this.gender = gender;
 	}
@@ -57,7 +61,7 @@ public HealthProfile
 	{
 		return month;
 	}
-	public setMonth (int month)
+	public void setMonth (int month)
 	{
 		this.month = month;
 	}
@@ -66,6 +70,23 @@ public HealthProfile
 	{
 		return year;
 	}
+	public double getWeight()
+	{
+		return weight;
+	}
+	public void setWeight (double weight)
+	{
+		this.weight = weight;
+	}
+	public double getHeight ()
+	{
+		return height;
+	}
+	public void setHeight (double height)
+	{
+		this.height = height;
+	}
+
 	public void setYear(int year)
 	{
 		this.year = year;
@@ -76,5 +97,37 @@ public HealthProfile
 
 		return age;
 	}
+	public int maxHeartRate (int age)
+	{
+		int mhf = 220 - age;
+		return mhf;
+	}
+
+	public double targetHeartRate (int freqMax)
+	{
+		double thr = freqMax * 0.85;
+		return thr;
+	}
+
+/*	public double imcCalculator (double weight, double height)
+	{
+		double imc = weight / height * height;
+
+		if (imc < 18.5)
+			JOptionPane.showMessageDialog (null, " Underweight!");
+		else
+		{
+			if(imc <=24.9)
+				JOptionPane.showMessageDialog (null, "Normal!");
+			else
+			{
+				if (imc <= 29.9)
+					JOptionPane.showMessageDialog (null, "Overweight!");
+				else
+					JOptionPane.showMessageDialog (null, "Obese!");
+			}
+		}
+		return imc;
+	} */
 }
 
