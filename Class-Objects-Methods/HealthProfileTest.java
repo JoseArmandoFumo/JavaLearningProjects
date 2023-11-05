@@ -33,7 +33,8 @@ public class HealthProfileTest
 		JOptionPane.showMessageDialog (null, "Name: "+name+ " " + surname + "\n"
 						+ "Gender: "+ gender+ "\n" + "Birthday" 
 						+ day + "/"+month + "/"+year + "\n \n\n"
-						+ "Age: "+age + "\n");
+						+ "Age: "+age + "\n"+ "Maxim Heart Frequency : "
+						+mhf +"\n");
 
 
 	}
