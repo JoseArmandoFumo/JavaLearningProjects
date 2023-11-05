@@ -111,7 +111,7 @@ public class HealthProfile
 
 	public double imcCalculator (double weight, double height)
 	{
-		double imc = weight / height * height;
+		double imc = weight / (height * height);
 
 		if (imc < 18.5)
 			JOptionPane.showMessageDialog (null, " Underweight!");

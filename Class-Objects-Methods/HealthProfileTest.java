@@ -24,7 +24,7 @@ public class HealthProfileTest
 		p.setMonth(month);
 		year = Integer.parseInt (JOptionPane.showInputDialog ("Birth Year: "));
 		p.setYear(year);
-		weight = Double.parseDouble (JOptionPane.showInputDialog ("Weight (cm): "));
+		weight = Double.parseDouble (JOptionPane.showInputDialog ("Weight (Kg): "));
 		p.setWeight (weight);
 		height = Double.parseDouble (JOptionPane.showInputDialog ("Height (m): "));
 		p.setHeight(height);
