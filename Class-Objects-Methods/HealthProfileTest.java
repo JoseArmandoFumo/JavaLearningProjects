@@ -27,14 +27,14 @@ public class HealthProfileTest
 
 		int age = p.getAge(year);
 		int mhf= p.maxHeartRate (age);
-		p.targetHeartRate (mhf);
+		double thr = p.targetHeartRate (mhf);
 		//p.imcCalculator (weight,height);
 
 		JOptionPane.showMessageDialog (null, "Name: "+name+ " " + surname + "\n"
 						+ "Gender: "+ gender+ "\n" + "Birthday" 
 						+ day + "/"+month + "/"+year + "\n \n\n"
 						+ "Age: "+age + "\n"+ "Maxim Heart Frequency : "
-						+mhf +"\n");
+						+mhf +"\n" + "Target Heart Rate: " + thr);
 
 
 	}
