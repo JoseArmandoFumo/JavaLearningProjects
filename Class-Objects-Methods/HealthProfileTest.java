@@ -24,17 +24,22 @@ public class HealthProfileTest
 		p.setMonth(month);
 		year = Integer.parseInt (JOptionPane.showInputDialog ("Birth Year: "));
 		p.setYear(year);
+		weight = Double.parseDouble (JOptionPane.showInputDialog ("Weight (cm): "));
+		p.setWeight (weight);
+		height = Double.parseDouble (JOptionPane.showInputDialog ("Height (m): "));
+		p.setHeight(height);
 
 		int age = p.getAge(year);
 		int mhf= p.maxHeartRate (age);
 		double thr = p.targetHeartRate (mhf);
-		//p.imcCalculator (weight,height);
+		double imc = p.imcCalculator (weight,height);
 
 		JOptionPane.showMessageDialog (null, "Name: "+name+ " " + surname + "\n"
 						+ "Gender: "+ gender+ "\n" + "Birthday" 
 						+ day + "/"+month + "/"+year + "\n \n\n"
 						+ "Age: "+age + "\n"+ "Maxim Heart Frequency : "
-						+mhf +"\n" + "Target Heart Rate: " + thr);
+						+mhf +"\n" + "Target Heart Rate: " + thr + "\n"
+						+ "IMC : " + imc);
 
 
 	}

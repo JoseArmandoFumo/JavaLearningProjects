@@ -109,7 +109,7 @@ public class HealthProfile
 		return thr;
 	}
 
-/*	public double imcCalculator (double weight, double height)
+	public double imcCalculator (double weight, double height)
 	{
 		double imc = weight / height * height;
 
@@ -128,6 +128,6 @@ public class HealthProfile
 			}
 		}
 		return imc;
-	} */
+	}
 }
 
