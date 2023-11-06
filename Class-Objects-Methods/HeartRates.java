@@ -8,7 +8,7 @@ public class HeartRates
 	private int month;
 	private int year;
 
-	public class HeartRates (String name, String surname, int day, int month, int year)
+	public  HeartRates (String name, String surname, int day, int month, int year)
 	{
 		this.name = name;
 		this.surname = surname;
@@ -65,11 +65,11 @@ public class HeartRates
 
 	public int getAge(int birthYear)
 	{     
-		int age;
+		int age = 0;
 		if(birthYear >=0)
 		age = 2023 - birthYear;
 		else
-			age = -1;
+			JOptionPane.showMessageDialog(null, "Age Invalid, enter Valid date!");
 		
 		return age;
 
