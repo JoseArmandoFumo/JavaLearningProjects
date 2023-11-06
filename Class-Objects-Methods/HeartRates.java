@@ -86,7 +86,11 @@ public class HeartRates
 
 	public  double targetHeartRate (int mhf)
 	{
-		double thr = mhf * 0.50;
+		double thr = 0.0;
+		if (mhf >=50 && mhf <=85)
+			thr = mhf * 0.50;
+		else
+			JOptionPane.showMessageDialog (null, "Max Heart Rate out of Range!");
 
 		return thr;
 		
