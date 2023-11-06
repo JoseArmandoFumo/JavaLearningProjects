@@ -93,7 +93,11 @@ public class HealthProfile
 	}
 	public int getAge (int birth)
 	{
-		int age = 2023 - birth;
+		int age= 0;
+		if (birth>=0)
+		 age = 2023 - birth;
+		else
+			JOptionPane.showMessageDialog(null,  "Invalid year!");
 
 		return age;
 	}
