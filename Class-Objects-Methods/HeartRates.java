@@ -78,8 +78,12 @@ public class HeartRates
 
 	public int maxHeartRate (int age)
 	{
-		int mhf = 220 - age;
+		int mhf =0;
+		if (age>=0)
+			mhf = 220 - age;
 
+		else 
+			JOptionPane.showMessageDialog (null, "Inalid Age");
 		return mhf;
 
 	}
