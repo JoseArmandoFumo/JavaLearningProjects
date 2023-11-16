@@ -1,4 +1,4 @@
-import javax.swing.JOptionPane;
+iimport javax.swing.JOptionPane;
 
 public class InvoiceTest
 {
@@ -11,7 +11,7 @@ public class InvoiceTest
 		
 		//inv.getInvoiceAmount();
 
-		JOptionPane.showMessageDialog (null,"Current Data: \n\n" + inv.getId() + "\n"+ inv.getDescription() +"\n"+ inv.getQty() +"\n"+ inv.getPrice());
+		//JOptionPane.showMessageDialog (null,"Current Data: \n\n" + inv.getId() + "\n"+ inv.getDescription() +"\n"+ inv.getQty() +"\n"+ inv.getPrice());
 	
 		quant = Integer.parseInt(JOptionPane.showInputDialog("Enter the Quantity: "));
 		inv.setQty(quant);
