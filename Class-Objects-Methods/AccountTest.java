@@ -10,13 +10,15 @@ public class AccountTest
 
 			double amount = 0.0;
 			int i ;
+			String sent = "N";
 		
 		//Scanner input = new Scanner (System.in);
 
 		JOptionPane.showMessageDialog(null, " Current Balance in account1: "+account1.getName()+account1.getBalance()+ "\n"
 						+ "Current Balance in Account2: "+ account2.getName() + account2.getBalance());
 
-		
+		while (sent != "S")
+		{
 
 		JOptionPane.showMessageDialog (null, "**********************MENU ************************************** \n");
 		int op = Integer.parseInt(JOptionPane.showInputDialog ("1 . Withdram : \n 2. Deposit:  \n 3.Balance:  \n Select the Option: "));
@@ -70,6 +72,8 @@ public class AccountTest
 
 
 
+		}
+		sent = JOptionPane.showInputDialog ("Deseja continuar (S / N)?: ");
 	}
 }
 
