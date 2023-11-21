@@ -22,7 +22,7 @@ public class HeartRatesTest
 		int maxFrequency = hr.maxHeartRate(age);						
 		double thr = hr.targetHeartRate (maxFrequency);
 
-	               JOptionPane.showMessageDialog(null, "\n"+ hr.getName() + " " + hr.getSurname()
+	               JOptionPane.showMessageDialog(null, "Information Report \n"+ hr.getName() + " " + hr.getSurname()
                                         		+ "\n" + hr.getDay() + "/"+hr.getMonth() 
 							+"/" + hr.getYear() 
 							+ "\n \n \n Your Age is: " + age+ "\n Max Heart Rate: "+maxFrequency
