@@ -15,6 +15,8 @@ public class StudentAverageTest
 
 		test = Double.parseDouble (JOptionPane.showInputDialog("Initial Test : "));
 
+		if (test <=20) //add exception for Strings
+		{
 		double average =0.0;
 		average = student.calcAverage(test);
 
@@ -24,7 +26,9 @@ public class StudentAverageTest
 			grade = "Passed!";
 
 		JOptionPane.showMessageDialog (null,"Name: "+ name+ "\n"+ String.format("Average = %.2f ", average)+"\n Grade: "+grade);
-
+		}
+		else
+			JOptionPane.showMessageDialog(null, "Enter valid value");
 	}
 
 }
