@@ -18,7 +18,7 @@ public class StudentAverageTest
 		double a =0.0;
 		a = student.calcAverage(test);
 
-		JOptionPane.showMessageDialog (null, "Average: "+ a);
+		JOptionPane.showMessageDialog (null, String.format("Average = %.2f ", a));
 
 	}
 
