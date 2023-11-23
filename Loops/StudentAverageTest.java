@@ -15,10 +15,15 @@ public class StudentAverageTest
 
 		test = Double.parseDouble (JOptionPane.showInputDialog("Initial Test : "));
 
-		double a =0.0;
-		a = student.calcAverage(test);
+		double average =0.0;
+		average = student.calcAverage(test);
 
-		JOptionPane.showMessageDialog (null, String.format("Average = %.2f ", a));
+		if (average <10)
+			grade = "Failed";
+		else
+			grade = "Passed!";
+
+		JOptionPane.showMessageDialog (null,"Name: "+ name+ "\n"+ String.format("Average = %.2f ", average)+"\n Grade: "+grade);
 
 	}
 
