@@ -57,7 +57,7 @@ public class StudentAverage
 				test = Double.parseDouble( JOptionPane.showInputDialog("Enter testT: "));
 				sum +=test;
 				i+=1;
-			}
+			}	
 		}
 
 		average = sum/i;
