@@ -41,20 +41,20 @@ public class StudentAverage
 
 		//est = Double.parseDouble(JOptionPane.showInputDialog("Introduza a primeira nota: "));
 
-		while (test >0 )
+		while (test != -1 )
 		{
 		//sum += test;
 		//i = i+1;
 			if(test<=20)
 			{
-				test = Double.parseDouble( JOptionPane.showInputDialog("Enter test: "));
+				test = Double.parseDouble( JOptionPane.showInputDialog("Enter test or -1 to quit: "));
 				sum +=test;
 				i+=1;
 			}
 			else
 			{
 				JOptionPane.showMessageDialog(null, "Invalid value!");
-				test = Double.parseDouble( JOptionPane.showInputDialog("Enter testT: "));
+				test = Double.parseDouble( JOptionPane.showInputDialog("Enter testt or -1 to quit: "));
 				sum +=test;
 				i+=1;
 			}	
@@ -65,4 +65,4 @@ public class StudentAverage
 		return average;
 	}
 }
-
+//bugs in method main (output)
