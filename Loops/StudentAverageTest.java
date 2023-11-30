@@ -25,7 +25,8 @@ public class StudentAverageTest
 		else
 			grade = "Passed!";
 
-		JOptionPane.showMessageDialog (null,"Name: "+ name+ "\n"+ String.format("Average = %.2f ", average)+"\n Grade: "+grade);
+		JOptionPane.showMessageDialog (null, "Soma de notas: " + average);
+		//JOptionPane.showMessageDialog (null,"Name: "+ name+ "\n"+ String.format("Average = %.2f ", average)+"\n Grade: "+grade);
 		}
 		else
 			JOptionPane.showMessageDialog(null, "Enter valid value");
