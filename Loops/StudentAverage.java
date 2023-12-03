@@ -35,35 +35,33 @@ public class StudentAverage
 	public double calcAverage (double test)
 		
 	{
-		double sum =0.0;
+		double total =0.0;
 		double i=0;
-		double average =0.0;
-
-		//est = Double.parseDouble(JOptionPane.showInputDialog("Introduza a primeira nota: "));
+		double average=0;
 
 		while (test != -1 )
 		{
-		//sum += test;
-		//i = i+1;
 			if(test<=20)
 			{
+				total = total + test;
 				test = Double.parseDouble( JOptionPane.showInputDialog("Enter test or -1 to quit: "));
-				sum +=test;
-			//	i+=1;
+				i=i+1;
 			}
 			else
 			{
 				JOptionPane.showMessageDialog(null, "Invalid value!");
-				//test = Double.parseDouble( JOptionPane.showInputDialog("Enter testt or -1 to quit: "));
-			//	sum +=test;
-			//	i+=1;
+				test = Double.parseDouble( JOptionPane.showInputDialog("Enter testt or -1 to quit: "));
+				//total  +=test;
+				//i+=1;
 			}
-			i= i+1;
+			//i= i+1;
 		}
+		if (i > 0)
+		average = total/i;
+		else
+			JOptionPane.showMessageDialog (null, "No data were inserted!");
 
-		average = sum/i;
-
-		return sum;
+		return average;
 	}
 }
 //bugs in method main (output)

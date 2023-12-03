@@ -15,9 +15,9 @@ public class StudentAverageTest
 
 		test = Double.parseDouble (JOptionPane.showInputDialog("Initial Test : "));
 
-		if (test <=20) //add exception for Strings
-		{
-		double average =0.0;
+		//if (test <=20) //add exception for Strings
+		//{
+		double average;
 		average = student.calcAverage(test);
 
 		if (average <10)
@@ -25,11 +25,11 @@ public class StudentAverageTest
 		else
 			grade = "Passed!";
 
-		JOptionPane.showMessageDialog (null, "Soma de notas: " + average);
-		//JOptionPane.showMessageDialog (null,"Name: "+ name+ "\n"+ String.format("Average = %.2f ", average)+"\n Grade: "+grade);
-		}
-		else
-			JOptionPane.showMessageDialog(null, "Enter valid value");
+		//JOptionPane.showMessageDialog (null, "Soma de notas: " + average);
+		JOptionPane.showMessageDialog (null,"Name: "+ name + "\n"+ String.format("Average = %.2f ", average)+"\n Grade: "+grade);
+		
+		//else
+		//	JOptionPane.showMessageDialog(null, "Enter valid value");
 	}
 
 }
