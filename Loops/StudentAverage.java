@@ -49,17 +49,16 @@ public class StudentAverage
 			}
 			else
 			{
-				JOptionPane.showMessageDialog(null, "Invalid value!");
+				JOptionPane.showMessageDialog(null, "Invalid value!\n Please Try Again!");
 				test = Double.parseDouble( JOptionPane.showInputDialog("Enter testt or -1 to quit: "));
-				//total  +=test;
-				//i+=1;
+			
+			
 			}
-			//i= i+1;
 		}
 		if (i > 0)
 		average = total/i;
 		else
-			JOptionPane.showMessageDialog (null, "No data were inserted!");
+			JOptionPane.showMessageDialog (null, "No data were inserted! \n Insert valid values!");
 
 		return average;
 	}
