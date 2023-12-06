@@ -10,10 +10,10 @@ public class DrawExercise41 extends JPanel {
 		int width = getWidth();
 		int height = getHeight();
 
-		g.drawLine (0,0, width, height);
+		g.drawLine (0,100, width, height);
 
-		g.drawLine(50, height, width, 0);
-}
+	//	g.drawLine(100, width,10,height);
+	}
 }
 
 
