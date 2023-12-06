@@ -3,11 +3,11 @@ import javax.swing.JPanel;
 
 
 public class DrawExercise41 extends JPanel {
-	public void paintComponent ( Graphics g);
+	public void paintComponent ( Graphics g)
 	{	
 		super.paintComponent (g);
 
-		int widht = getWidth();
+		int width = getWidth();
 		int height = getHeight();
 
 		g.drawLine (0,0, width, height);
