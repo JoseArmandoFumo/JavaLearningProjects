@@ -12,7 +12,7 @@ public class DrawExercise41 extends JPanel {
 
 		g.drawLine (0,0, width, height);
 
-		g.drawLine(0, height, width, 0);
+		g.drawLine(50, height, width, 0);
 }
 }
 
