@@ -1,5 +1,4 @@
 import javax.swing.JFrame;
-
 public class DrawExercise41Test 
 {
 	public static void main (String [] args)
@@ -8,6 +7,7 @@ public class DrawExercise41Test
 
 		JFrame app = new JFrame ();
 
+		app.setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE);
 		app.add (panel);
 		app.setSize (250, 250);
 		app.setVisible (true);
