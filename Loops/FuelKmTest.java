@@ -25,15 +25,15 @@ public class FuelKmTest {
 				totalKilometers += kilometers;
 				totalfuel += fuelQty;
 
-				JOptionPane.showMessageDialog (null, "The Consumption was: " + consumption + " KM/L");
+				JOptionPane.showMessageDialog (null, "The Consumption was: " +String.format ("consumption =%.2f",consumption) + " KM/L");
 			}
 			else 
 			JOptionPane.showMessageDialog (null, "Error! Enter valid data!");
 
 		op = Integer.parseInt (JOptionPane.showInputDialog ("Do you want do continue (No=-1/ Yes =1)?"));
 			if (op == -1)
-				JOptionPane.showMessageDialog (null, "Total Kilometers: " + totalKilometers +"\n"
-						+ "Total Fuel: " + totalfuel + "\n");
+				JOptionPane.showMessageDialog (null, "Total Kilometers: " + totalKilometers +"KM \n"
+						+ "Total Fuel: " + totalfuel + "L");
 		}
 	}
 
