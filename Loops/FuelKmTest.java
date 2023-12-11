@@ -31,6 +31,9 @@ public class FuelKmTest {
 			JOptionPane.showMessageDialog (null, "Error! Enter valid data!");
 
 		op = Integer.parseInt (JOptionPane.showInputDialog ("Do you want do continue (No=-1/ Yes =1)?"));
+			if (op == -1)
+				JOptionPane.showMessageDialog (null, "Total Kilometers: " + totalKilometers +"\n"
+						+ "Total Fuel: " + totalfuel + "\n");
 		}
 	}
 
