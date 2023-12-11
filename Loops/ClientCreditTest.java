@@ -4,7 +4,10 @@ public class ClientCreditTest
 {
 	public static void main (String [] args ) {
 		ClientCredit client = new ClientCredit ("Fumo", 0,0,0,0,0);
-
+		
+		String op = "y";
+		while (op != "N" )
+		{
 		String name = JOptionPane.showInputDialog ("Name: ");
 		client.setName (name); 
 
@@ -33,6 +36,9 @@ public class ClientCreditTest
 			}
 		else
 			JOptionPane.showMessageDialog (null, "name: " + name +"\n The new Balance is: " + newBal + "\n Error! Limit Credit Authorized Exceeded!");
+	
+		op = JOptionPane.showInputDialog ("Do you want to Continue (Y=yes/N=No)? :");
+		}
 	}
 }
 
