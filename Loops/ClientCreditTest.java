@@ -26,8 +26,13 @@ public class ClientCreditTest
 		int newBal = 0;
 
 		newBal = client.newBalance (initialBalance, total_monthly, totalCredit);
-		
-		JOptionPane.showMessageDialog (null, "The new Balance is: " + newBal);
+		if (newBal < limit)
+			{
+				String status = " Okay!";
+				JOptionPane.showMessageDialog (null, "Name: "+ name + "\n The new Balance is: " + newBal + "\n Limit Credit Authorized: "+ status);
+			}
+		else
+			JOptionPane.showMessageDialog (null, "name: " + name +"\n The new Balance is: " + newBal + "\n Error! Limit Credit Authorized Exceeded!");
 	}
 }
 
