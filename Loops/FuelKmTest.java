@@ -16,11 +16,15 @@ public class FuelKmTest {
 		fuelQty = Integer.parseInt (JOptionPane.showInputDialog ("Enter the Fuel (L): "));
 		fk.setFuelQty (fuelQty);
 
-
-
+		if (kilometers >0 && fuelQty >0) 
+		{
 		consumption = fk.fuelConsumption (kilometers, fuelQty);
-
 		JOptionPane.showMessageDialog (null, "The Consumption was: " + consumption + " KM/L");
+		}
+		else 
+			JOptionPane.showMessageDialog (null, "Error! Enter valid data!");
+
 	}
+
 }
 
