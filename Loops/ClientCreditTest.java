@@ -4,14 +4,14 @@ public class ClientCreditTest
 {
 	public static void main (String [] args ) {
 		ClientCredit client = new ClientCredit ("Fumo", 0,0,0,0,0);
-		
+		int accountNr = 1000;
 		String op = "y";
-		while (op != "N" )
+		while (op != "n" )
 		{
 		String name = JOptionPane.showInputDialog ("Name: ");
 		client.setName (name); 
 
-		int accountNr = 1000;
+		accountNr += 1;
 		client.setAccountNr (accountNr);
 
 		int initialBalance = Integer.parseInt (JOptionPane.showInputDialog ("Enter Initial Batalabce: "));
@@ -32,10 +32,10 @@ public class ClientCreditTest
 		if (newBal < limit)
 			{
 				String status = " Okay!";
-				JOptionPane.showMessageDialog (null, "Name: "+ name + "\n The new Balance is: " + newBal + "\n Limit Credit Authorized: "+ status);
+				JOptionPane.showMessageDialog (null, "ID: "+ accountNr + "\nName: "+ name + "\n The new Balance is: " + newBal + "\n Limit Credit Authorized: "+ status);
 			}
 		else
-			JOptionPane.showMessageDialog (null, "name: " + name +"\n The new Balance is: " + newBal + "\n Error! Limit Credit Authorized Exceeded!");
+			JOptionPane.showMessageDialog (null,"ID: "+accountNr + "\nname: " + name +"\n The new Balance is: " + newBal + "\n Error! Limit Credit Authorized Exceeded!");
 	
 		op = JOptionPane.showInputDialog ("Do you want to Continue (Y=yes/N=No)? :");
 		}
