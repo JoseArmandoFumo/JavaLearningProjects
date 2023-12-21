@@ -4,18 +4,18 @@ public class Investiment
 { 
 	public static void main (String [] args)
 	{
-		int p;
+		int principal;
 		double r = 0.5;
 		int year;
-		double a;
+		double amount;
 		
-		p = Integer.parseInt(JOptionPane.showInputDialog ("Informe o valor: "));
+		principal = Integer.parseInt(JOptionPane.showInputDialog ("Informe o valor: "));
 		//n = Integer.parseInt (JOptionPane.showInputDialog ("Informe o numer de anos: "));
 
 			for (year =1 ; year<=5; ++year){
-				a = p * Math.pow(1.0 + r, year );
+				amount = principal * Math.pow(1.0 + r, year );
 
-				JOptionPane.showMessageDialog (null,"Year: "+ year + " mount: "+a);
+				JOptionPane.showMessageDialog (null,"Year: "+ year + " mount: "+amount);
 			}
 	}
 }
