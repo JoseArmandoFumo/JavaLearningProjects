@@ -10,9 +10,9 @@ public class Investiment
 		double amount;
 		
 		principal = Integer.parseInt(JOptionPane.showInputDialog ("Informe o valor: "));
-		//n = Integer.parseInt (JOptionPane.showInputDialog ("Informe o numer de anos: "));
+		int n = Integer.parseInt (JOptionPane.showInputDialog ("Informe o numer de anos: "));
 
-			for (year =1 ; year<=5; ++year){
+			for (year =1 ; year<= n; ++year){
 				amount = principal * Math.pow(1.0 + r, year );
 
 				JOptionPane.showMessageDialog (null,"Year: "+ year + " mount: "+amount);
