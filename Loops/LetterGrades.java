@@ -5,7 +5,7 @@ public class LetterGrades
 	public static void main (String [] args)
 	{
 		int total = 0;
-		int i = 0;
+		int op = 0;
 		int gradeCounter = 0;
 		int aCounter = 0;
 		int bCounter = 0;
@@ -13,13 +13,16 @@ public class LetterGrades
 		int dCounter = 0;
 		int eCounter = 0;
 
-		int op = Integer.parseInt(JOptionPane.showInputDialog ("Enter the Grade or press -1 to Exit: "));
-		
-		gradeCounter++;
-		total +=op;
-
+		//int op = Integer.parseInt(JOptionPane.showInputDialog ("Enter the Grade or press -1 to Exit: "));
 		while (op != -1)
-		{
+		{	
+			gradeCounter++;
+			total +=op;
+
+		
+			op = Integer.parseInt(JOptionPane.showInputDialog ("Enter the Grade or press -1 to Exit: "));
+
+		
 			switch (op/10)
 			{
 				case 9: 
