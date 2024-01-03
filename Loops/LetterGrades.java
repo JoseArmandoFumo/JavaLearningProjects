@@ -45,7 +45,7 @@ public class LetterGrades
 		if (gradeCounter != 0) 
 		{
 			double average = (double) total / gradeCounter;
-			JOptionPane.showMessageDialog (null, "Greade Counter: "+ gradeCounter + "\n"+"Total: " + total);
+			JOptionPane.showMessageDialog (null, "Greade Counter: "+ gradeCounter + "\n"+"Total: " + total + "\n" + "Class Average is: " + average + "\n Number of Students who received each grade: \n\n" +"A: " + aCounter+ "\n B: " + bCounter + "\n C: "+cCounter + "\n D: "+dCounter + "\n E: " + eCounter);
 
 		}
 		else
