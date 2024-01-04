@@ -22,7 +22,7 @@ public class AutoPolicy
 		this.accountNumber = accountNumber;
 	}
 
-	public String getMAkeAndModel ()
+	public String getMakeAndModel ()
 	{
 		return makeAndModel;
 	}
