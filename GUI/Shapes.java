@@ -1,7 +1,7 @@
-import javax.swing.JOptionPane;
+import javax.swing.JPanel;
 import java.awt.Graphics;
 
-public class Shapes 
+public class Shapes extends JPanel
 {
 	private int choice;
 
