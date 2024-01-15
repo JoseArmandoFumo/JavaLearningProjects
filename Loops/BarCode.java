@@ -20,9 +20,10 @@ public class BarCode
 				{
 					System.out.print ("* ");
 				}
+				System.out.println();
 			}
-	
-			System.out.println ();
+			else
+			System.out.println ("Invalid Number! Try again.");
 	}
 	}
 }
